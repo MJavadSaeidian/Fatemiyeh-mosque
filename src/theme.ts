@@ -1,7 +1,4 @@
-import {
-  createTheme,
-  type PaletteMode,
-} from "@mui/material/styles";
+import { createTheme, type PaletteMode } from "@mui/material/styles";
 
 export function createAppTheme(mode: PaletteMode = "light") {
   const isDark = mode === "dark";
@@ -21,23 +18,17 @@ export function createAppTheme(mode: PaletteMode = "light") {
   const glassBackdropFilter = "blur(16px) saturate(160%)";
 
   const hoverColors = {
-    background: isDark
-      ? "rgba(19, 182, 201, 0.14)"
-      : "rgba(8, 127, 145, 0.07)",
+    background: isDark ? "rgba(19, 182, 201, 0.14)" : "rgba(8, 127, 145, 0.07)",
 
     primary: isDark ? "#55D0DC" : "#066B7A",
 
     secondary: isDark ? "#F0DDAA" : "#806329",
 
-    border: isDark
-      ? "rgba(85, 208, 220, 0.45)"
-      : "rgba(8, 127, 145, 0.25)",
+    border: isDark ? "rgba(85, 208, 220, 0.45)" : "rgba(8, 127, 145, 0.25)",
 
     card: isDark ? "#164653" : "#FAFCFC",
 
-    glass: isDark
-      ? "rgba(19, 182, 201, 0.16)"
-      : "rgba(255, 255, 255, 0.76)",
+    glass: isDark ? "rgba(19, 182, 201, 0.16)" : "rgba(255, 255, 255, 0.76)",
   };
 
   return createTheme({
@@ -70,9 +61,7 @@ export function createAppTheme(mode: PaletteMode = "light") {
         secondary: isDark ? "#C2D0D4" : "#6F858C",
       },
 
-      divider: isDark
-        ? "rgba(255, 255, 255, 0.14)"
-        : "#D5DEE0",
+      divider: isDark ? "rgba(255, 255, 255, 0.14)" : "#D5DEE0",
 
       success: {
         main: isDark ? "#69C99A" : "#287D56",
@@ -93,9 +82,7 @@ export function createAppTheme(mode: PaletteMode = "light") {
           ? "rgba(19, 182, 201, 0.20)"
           : "rgba(8, 127, 145, 0.12)",
         selectedOpacity: 0.12,
-        focus: isDark
-          ? "rgba(19, 182, 201, 0.22)"
-          : "rgba(8, 127, 145, 0.14)",
+        focus: isDark ? "rgba(19, 182, 201, 0.22)" : "rgba(8, 127, 145, 0.14)",
         focusOpacity: 0.12,
         disabled: isDark
           ? "rgba(244, 243, 238, 0.30)"
@@ -262,8 +249,7 @@ export function createAppTheme(mode: PaletteMode = "light") {
         styleOverrides: {
           root: {
             borderRadius: 10,
-            transition:
-              "color 180ms ease, background-color 180ms ease",
+            transition: "color 180ms ease, background-color 180ms ease",
 
             "&:hover": {
               color: hoverColors.primary,
